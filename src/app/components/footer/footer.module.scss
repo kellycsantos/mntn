@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    background: rgba($white, .1);
+    padding: 30px 15px;
+
+    section {
+        img{
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: $accent !important;
+
+        }
+
+        ul li{
+         &:first-child{
+            margin-top: 1rem;
+         }
+            a {
+                color: $white;
+                display: inline-flex;
+                margin-top: .8rem;
+            
+            }
+        }
+        &.details{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .copy{
+                color: rgb($white, .5);
+            
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #footer {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+}
