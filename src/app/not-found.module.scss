@@ -1,0 +1,46 @@
+@import 'variables.scss';
+
+.notfound {
+    height: 100%;
+    text-align: center;
+    margin-top: 25px;
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    a{
+        color: $accent;
+        text-decoration: underline;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .notfound {
+        height: 50%;
+        text-align: center;
+        margin-top: 25px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        img {
+            height: 50%;
+            width: auto;
+        }
+    }
+}
