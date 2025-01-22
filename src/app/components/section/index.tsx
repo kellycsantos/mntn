@@ -1,5 +1,10 @@
+import react from 'react'
 import { useEffect } from 'react'
 import styles from './section.module.scss'
+
+interface CustumCSSProperties extends React.CSSProperties{
+    '--number' ? : string;
+}
 
 interface ISection {
     id: number,
@@ -21,7 +26,7 @@ export default function Section({ id, title, subtitle, description, img }: ISect
         <section className={`${styles.section} `}>
             <article className={`${order(id) ? '' : `${styles.reverse}`}`}>
                 <p
-                    style={{ "--number": `'0${id}'` }}
+                    style={{ "--number": `'0${id}'` } as CustumCSSProperties}
                     className={styles.rules}>--- {subtitle}</p>
                 <h2>{title}</h2>
                 <p>{description} </p>
