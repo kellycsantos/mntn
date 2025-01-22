@@ -10,10 +10,12 @@ export default function Hero(){
     <section className={styles.hero}>
         <p>Follow Us</p>
         <a href="">
-            <img src={iconTwitter.src} alt=""/>
+          twitter
+            <img src={iconTwitter.src} />
         </a>
         <a href="">
-            <img src={iconInstagram.src} alt=""/>
+          instagram
+            <img src={iconInstagram.src} />
         </a>
     </section>
   </header>
