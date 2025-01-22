@@ -1,6 +1,6 @@
-import getStart from '@/assets/hiker.png'
-import hiking from '@/assets/hiking_car.png'
-import timing from '@/assets/map_timing.png'
+import getStart from '@/assets/hiker.webp'
+import hiking from '@/assets/hiking_car.webp'
+import timing from '@/assets/map_timing.webp'
 
 export const data = [
     {
