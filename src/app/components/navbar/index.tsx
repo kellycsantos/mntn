@@ -25,9 +25,9 @@ return (
         <img src={logo.src} alt='' />
 
         <ul id="menu" className={!visible ? `${styles.closed}` : ''}>
-            <li><a href="/">Equipment</a></li>
-            <li><a href="/">About us</a></li>
-            <li><a href="/">Blog</a></li>
+            <li><a href="/equipaments">Equipment</a></li>
+            <li><a href="/about-us">About us</a></li>
+            <li><a href="/news">Blog</a></li>
             <li><a href="/">Login</a></li>
         </ul>
         <span>
