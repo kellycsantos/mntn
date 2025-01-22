@@ -1,7 +1,7 @@
 import styles from './hero.module.scss'
 
-import iconTwitter from '@/assets/icons/twitter.png'
-import iconInstagram from '@/assets/icons/instagram.png'
+import iconTwitter from '@/assets/icons/twitter.webp'
+import iconInstagram from '@/assets/icons/instagram.webp'
 
 export default function Hero(){
     return(
