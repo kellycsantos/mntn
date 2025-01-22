@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.header {
+    height: 85dvh;
+    background: url('../../../assets/background.png') center left;
+    background-size: cover;
+    position: relative;
+    margin-top: -10dvh;
+    z-index: -10;
+
+    .hero {
+        padding-inline: 30px;
+        position: absolute;
+        left: 0 !important;
+        width: 100%;
+        top: calc(16dvh * 1.2);
+
+        * {
+            margin-bottom: 15px;
+        }
+
+
+        p {
+            writing-mode: vertical-lr;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        a {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .header {
+        height: 75dvh;
+        background-size: auto;
+
+     
+    }
+}
