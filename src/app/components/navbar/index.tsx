@@ -36,8 +36,7 @@ return (
                 Login
             </a>
         </span>
-
-        <button className={!visible ? `${styles.closed}` : ''} onClick={(e) => showMenu()}></button>
+        <button className={!visible ? `${styles.closed}` : ''} onClick={(e) => showMenu()} aria-label={visible ? 'close menu' : 'open menu'}></button>
     </nav>
 )
 }
