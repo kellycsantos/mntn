@@ -1,0 +1,78 @@
+@import '../../variables.scss';
+
+
+
+.section {
+    // border: 1px solid rgba(255, 0, 0, 0.342);
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 50px;
+    margin-bottom: 100px;
+
+    article {
+        h2 {
+            font-size: 2.7rem
+        }
+
+        p {
+            max-width: 600px;
+
+            &.rules {
+                color: $accent;
+                position: relative;
+                margin-left: 40px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                &::before {
+                    content: var(--number);
+                    height: 0px;
+                    font-size: 6rem;
+                    position: absolute;
+                    top: -55px;
+                    left: -90px;
+                    display: inline-block;
+                    color: rgba($white, .2);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        a {
+            color: $accent;
+        }
+    }
+
+    img {
+        margin-top: 50px;
+        width: 100%;
+        filter: contrast(115%) saturate(120%);
+        border-radius: 4px;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .section {
+
+        flex-direction: row;
+
+        article {
+            &.reverse {
+                order: 1;
+            }
+        }
+
+        img {
+            margin-top: 0px;
+            width: clamp(180px, 50%, 350px);
+        }
+    }
+
+}
